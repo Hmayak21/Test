@@ -1,9 +1,5 @@
 ﻿using System;
 
-//class Program
-//{
-//static void Main()
-//{
 Console.WriteLine("Решение квадратного уравнения ax^2 + bx + c = 0");
 
         // Ввод коэффициентов
@@ -46,8 +42,3 @@ Console.WriteLine("Решение квадратного уравнения ax^2
             // Нет действительных корней
             Console.WriteLine("Уравнение не имеет действительных корней.");
         }
-    //}
-//}
-
-//Console.WriteLine("Hello, World!");
-// Console.ReadLine();
