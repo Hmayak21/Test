@@ -2,7 +2,7 @@
 
 Console.WriteLine("Решение квадратного уравнения ax^2 + bx + c = 0");
 
-        // Ввод коэффициентов
+        // Input coefficients
         Console.Write("Введите a: ");
         double a = Convert.ToDouble(Console.ReadLine());
 
@@ -12,33 +12,33 @@ Console.WriteLine("Решение квадратного уравнения ax^2
         Console.Write("Введите c: ");
         double c = Convert.ToDouble(Console.ReadLine());
 
-        // Проверка, что это действительно квадратное уравнение
+        // Check if it's an quadrat equality
         if (a == 0)
         {
             Console.WriteLine("Это не квадратное уравнение (a не должно быть 0).");
             return;
         }
 
-        // Вычисление дискриминанта
+        // Count discriminant
         double discriminant = b * b - 4 * a * c;
 
         Console.WriteLine($"Дискриминант D = {discriminant}");
 
         if (discriminant > 0)
         {
-            // Два корня
+            // Two roots
             double x1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
             double x2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
             Console.WriteLine($"Уравнение имеет два корня: x1 = {x1}, x2 = {x2}");
         }
         else if (discriminant == 0)
         {
-            // Один корень
+            // One root
             double x = -b / (2 * a);
             Console.WriteLine($"Уравнение имеет один корень: x = {x}");
         }
         else
         {
-            // Нет действительных корней
+            // No valid roots
             Console.WriteLine("Уравнение не имеет действительных корней.");
         }
