@@ -1,1 +1,1 @@
-# Test
+This program counts discrimimant of quadratic equality
